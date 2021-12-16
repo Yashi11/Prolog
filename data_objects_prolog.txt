@@ -1,0 +1,41 @@
+*Data Objects in Prolog*
+
+
+Data Objects
+    1.Simple Objects
+        a.Constants
+            i) atoms  ii)numbers
+        b.Variables
+    2.Structures
+
+-> Examples
+atoms: tom,pat,x100,x_45
+numbers: 100,1234,200.54
+Variables: X,Y,Z,Xval,_X
+Structures: day(9,jun,2017),point(10,25)
+
+-> Atoms
+
+Atoms can be constructed in three ways:-
+A. Strings of letters,digits and the underscore character '_', starting with the lower case letter.For example:- azahar,b53,b_90,b_x80,john_samuels etc.
+B. strings of special characters. For eg:- <---->,<=====>,::=,..:.
+But we need to be careful here as some strings like :- have a predefined special meaning.
+B.Strings of characters in single quotes can also be treated as atoms. This is useful when we want an atom starting with capital lettter for example: 'Rubina','John Samuels','Yuang Choi'
+
+->Numbers
+
+In Prolog, Numbers can be either Integers or Real-Numbers.
+As, prolog is primarily a language for symbolic,non-numeric computation, we do not have to use real numbers in typical prolog programming.
+We may use integers to count the number of items in a list in Prolog programming.
+
+->Variables
+
+Variables are strings of letters,digits and underscore characters.They satrt with the an upper-case letter or an underscore character. For eg:- C,Sum,Student_list,_a50,_15,Studentlist
+Anonymous Variables are represented by _.
+
+
+->Structures
+
+structure data objects are objects that have multiple components.The components themselves can,in turn, be structures.
+For example:- date is a structure with 3 components-day,moth,year
+Structures can be represented using tree representation and prolog representations.
